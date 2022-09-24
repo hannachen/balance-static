@@ -4,6 +4,7 @@ backend:
   branch: build-test
   base_url: https://auth2.thebalanceffxiv.fpo.website
   site_domain: thebalanceffxiv.fpo.website
+  auth_endpoint: /oauth/auth/
   cms_label_prefix: cms/
 publish_mode: editorial_workflow
 media_folder: static/img
