@@ -3,8 +3,9 @@ name: github pages
 on:
   push:
     branches:
-      - main  # Set a branch to deploy
+      - build-test  # Set a branch to deploy
   pull_request:
+  workflow_dispatch:
 
 jobs:
   deploy:
@@ -45,7 +46,7 @@ jobs:
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
-        if: ${{ github.ref == 'refs/heads/main' }}
+        if: ${{ github.ref == 'refs/heads/build-test' }}
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
