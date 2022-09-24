@@ -1,14 +1,14 @@
 backend:
   name: github
-  repo: The-Balance-FFXIV/balance-static
-  branch: main
-  base_url: https://auth2.thebalanceffxiv.com
-  site_domain: www.thebalanceffxiv.com
+  repo: hannachen/balance-static
+  branch: build-test
+  base_url: https://auth2.thebalanceffxiv.fpo.website
+  site_domain: thebalanceffxiv.fpo.website
   cms_label_prefix: cms/
 publish_mode: editorial_workflow
 media_folder: static/img
 public_folder: /img
-site_url: https://www.thebalanceffxiv.com/
+site_url: https://thebalanceffxiv.fpo.website/
 show_preview_links: true
 ###
 # Be careful in editing this; discuss in website channels first!
